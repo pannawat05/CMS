@@ -1,0 +1,38 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: arial;
+}
+* a{
+text-decoration: none;
+color: #ffffff;
+}
+.sidebar{
+width: 60px;
+background:rgb(45,48,58) ;
+min-height: 100vh;
+transition: .3s;
+}
+.sidebar:hover{
+width: 200px;
+}
+.sidebar:hover ul li a span{
+opacity: 1;
+visibility: visible;
+}
+ul li a{
+display: flex;
+align-items: center;
+padding: 25px 0 25px 20px;
+}
+ul li a:hover{
+background: rgba(0, 0, 0,.3);}
+ul li a i{
+width: 35px;
+}
+ul li a span{
+margin-left: 10px;
+opacity: 0;
+visibility: 0;
+transition: .3s ease-in;}
